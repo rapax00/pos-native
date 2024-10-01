@@ -49,36 +49,42 @@ export default function MenuScreen() {
             title="Barra"
             icon="local-bar"
             color="mediumseagreen"
+            width="full"
             onPress={() => handlePress('drinks')}
           />
           <Card
             title="Comida"
             icon="fastfood"
-            color="mediumseagreen"
-            onPress={() => handlePress('food')}
-          />
-          <Card
-            title="Caja"
-            icon="point-of-sale"
             color="dodgerblue"
-            onPress={() => handlePress('cash')}
+            width="half"
+            onPress={() => handlePress('food')}
           />
           <Card
             title="Merch"
             icon="shopping-cart"
-            color="dodgerblue"
+            color="orange"
+            width="half"
             onPress={() => handlePress('merch')}
+          />
+          <Card
+            title="Caja"
+            icon="point-of-sale"
+            color="tomato"
+            width="third"
+            onPress={() => handlePress('cash')}
           />
           <Card
             title="Admin"
             icon="admin-panel-settings"
             color="tomato"
+            width="third"
             onPress={() => handlePress('admin')}
           />
           <Card
             title="Extraer"
             icon="insert-drive-file"
             color="tomato"
+            width="third"
             onPress={() => handlePress('extract')}
           />
         </ThemedView>
